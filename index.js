@@ -47,12 +47,12 @@ const bot2 = new TeleBot({
     // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
    }); 
 
-   bot.on(/^\/say (.+)$/, (msg, props) => {
+/*    bot.on(/^\/say (.+)$/, (msg, props) => {
     const text = props.match[1];
     console.log(text);
   promo = text;
   return;
-});
+}); */
   bot.on('newChatMembers' , (msg) => {
    
     var darta =  JSON.stringify(msg)
