@@ -6,7 +6,7 @@ var bot = new TeleBot({
 
 
 
-token: '473419177:AAG0ZRbJvzza6BPadbjKHXwfTSLjHQNeSf0', // Required. Telegram Bot API token.
+token: '542601636:AAF3vE4Tn86bV7dIgNWXwIzI9QR0b19YLlk', // Required. Telegram Bot API token.
     allowedUpdates: [], // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
   
 });
