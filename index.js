@@ -1,5 +1,7 @@
 const TeleBot = require('telebot');
 
+
+var promo = "Please join our channel t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo";
 var bot = new TeleBot({
  //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
 // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
@@ -25,6 +27,8 @@ const bot2 = new TeleBot({
    //console.log(darta);
    // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
   }); */
+
+
  bot2.on('newChatMembers' , (msg2) => {
    
     var darta =  JSON.stringify(msg2)
@@ -38,12 +42,16 @@ const bot2 = new TeleBot({
            // var name ='@'+msg.new_chat_member.username ; //https://goo.gl/o5FioD
        var nc2 =  msg2.new_chat_member;
        console.log(nc2);
-       return bot2.sendMessage(msg2.chat.id, `Hi , ${name} !!  Please join our channel t.me/ultrapumpsignal and get extra 100 candy!! . Do follow us at twitter https://goo.gl/ozfpqo` );
+       return bot2.sendMessage(msg2.chat.id, `Hi , ${name} !! ${promo} `);
      }}
     // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
    }); 
 
-   
+   bot.on(/^\/say (.+)$/, (msg, props) => {
+    const text = props.match[1];
+    console.log(text);
+  promo = text;
+});
   bot.on('newChatMembers' , (msg) => {
    
     var darta =  JSON.stringify(msg)
@@ -57,7 +65,7 @@ const bot2 = new TeleBot({
            // var name ='@'+msg.new_chat_member.username ; 
        var nc =  msg.new_chat_member;
        console.log(nc);
-       return bot.sendMessage(msg.chat.id, `Hi , ${name} !!  Please join our channel t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo` );
+       return bot.sendMessage(msg.chat.id,  `Hi , ${name} !! ${promo} ` );
      }}
     // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
    });
@@ -69,7 +77,7 @@ const bot2 = new TeleBot({
      console.log(darta);
 
      
-       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  Please join our channel  t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo` );
+       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}` );
      
    
    });
