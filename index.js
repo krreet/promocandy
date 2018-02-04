@@ -51,6 +51,7 @@ const bot2 = new TeleBot({
     const text = props.match[1];
     console.log(text);
   promo = text;
+  return;
 });
   bot.on('newChatMembers' , (msg) => {
    
