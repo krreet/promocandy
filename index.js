@@ -1,14 +1,28 @@
 const TeleBot = require('telebot');
 
 
+
+
+
+const botf = new TeleBot({
+    token: '407044467:AAGMSmZzfdX3oZOxiX7OH8OGjRl0C8n3hgA', // Required. Telegram Bot API token. token bot
+   
+ }); 
+
+
+
+
+
+
+
+var candytoken = '520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
 var promo = "Please join our channel t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo";
 var bot = new TeleBot({
  //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
 // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
 
 
-
-token:  '520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w', // Required. Telegram Bot API token.
+token:  candytoken // Required. Telegram Bot API token.
     allowedUpdates: [], // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
   
 });
@@ -20,6 +34,21 @@ const bot2 = new TeleBot({
      
    }); 
    
+
+
+
+
+ botf.on(/^\/say (.+)$/, (msg, props) => {
+    const text = props.match[1];
+    //split props by space 1st is bot naem 2nd token rn only 1
+  //  console.log(text);
+  candytoken = text;
+  bot.stopPolling();
+  bot.connect();
+  return botf.sendMessage(msg.from.id,'candytoken set to ${text}', { replyToMessage: msg.message_id });
+ 
+
+});
 
 /* bot.on('update' , (msg) => {
    
