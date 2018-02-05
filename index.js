@@ -22,8 +22,8 @@ var bot = new TeleBot({
 // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
 
 
-token:  candytoken // Required. Telegram Bot API token.
-    allowedUpdates: [], // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
+token:  candytoken ,// Required. Telegram Bot API token.
+    allowedUpdates: []// Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
   
 });
 
