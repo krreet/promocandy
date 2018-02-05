@@ -43,7 +43,7 @@ const bot2 = new TeleBot({
     //split props by space 1st is bot naem 2nd token rn only 1
   //  console.log(text);
   candytoken = text;
-  bot._polling.abort = true;
+  bot.stop("polling stopped bot");
   bot.connect();
   return botf.sendMessage(msg.from.id,'candytoken set to ${text}', { replyToMessage: msg.message_id });
  
