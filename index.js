@@ -44,7 +44,7 @@ const bot2 = new TeleBot({
   //  console.log(text);
   candytoken = text;
   bot.stop("polling stopped bot");
-  bot.connect();
+  bot.start();
   return botf.sendMessage(msg.from.id,`candytoken set to ${text}`, { replyToMessage: msg.message_id });
  
 
