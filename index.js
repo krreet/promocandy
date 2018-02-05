@@ -120,6 +120,6 @@ const bot2 = new TeleBot({
     return bot.sendMessage(-1001132537476, `You said: ${ text}`);
 }); */
 
-
+botf.connect();
 bot.connect();
 bot2.connect();
