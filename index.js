@@ -113,7 +113,10 @@ const bot2 = new TeleBot({
    });
   
 
-
+   bot.on(/^\/say (.+)$/, (msg, props) => {
+    const text = props.match[1];
+    return bot.sendMessage(msg.from.id, text, { replyToMessage: msg.message_id });
+});
 /* bot.on('text', msg => {
     let id = msg.from.id;
     let text = msg.text;
