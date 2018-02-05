@@ -15,7 +15,7 @@ const botf = new TeleBot({
 
 
 
-var candytoken = '522144670:AAEhYDmZsWu0EBI89GxB65XYMq0sJYnXqDE'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
+var candytoken = '522847314:AAEhARhnwgQ1FqFlMgKRaYtgBXc0yIPTjjc';//'522144670:AAEhYDmZsWu0EBI89GxB65XYMq0sJYnXqDE'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
 var promo = "Please join our channel t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo";
 var bot = new TeleBot({
  //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
