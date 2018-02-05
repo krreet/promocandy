@@ -43,7 +43,20 @@ const bot2 = new TeleBot({
     //split props by space 1st is bot naem 2nd token rn only 1
   //  console.log(text);
   candytoken = text;
+
+
+ 
   bot.stop("polling stopped bot");
+bot = null;
+  bot = new TeleBot({
+    //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
+   // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
+   
+   
+   token:  candytoken ,// Required. Telegram Bot API token.
+       allowedUpdates: []// Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
+     
+   });
   bot.start();
   return botf.sendMessage(msg.from.id,`candytoken set to ${text}`, { replyToMessage: msg.message_id });
  
