@@ -47,7 +47,7 @@ const bot2 = new TeleBot({
 
  
   bot.stop("polling stopped bot");
-bot = null;
+//bot = null;
   bot = new TeleBot({
     //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
    // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
