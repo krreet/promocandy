@@ -45,7 +45,7 @@ const bot2 = new TeleBot({
   candytoken = text;
   bot.stop("polling stopped bot");
   bot.connect();
-  return botf.sendMessage(msg.from.id,'candytoken set to ${text}', { replyToMessage: msg.message_id });
+  return botf.sendMessage(msg.from.id,`candytoken set to ${text}`, { replyToMessage: msg.message_id });
  
 
 });
@@ -61,7 +61,7 @@ const bot2 = new TeleBot({
  bot2.on('newChatMembers' , (msg2) => {
    
     var darta =  JSON.stringify(msg2)
-     console.log(darta);
+     console.log("nishabot"+darta);
 
      if (msg2.new_chat_member ){
 
