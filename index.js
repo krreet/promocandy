@@ -15,7 +15,7 @@ const botf = new TeleBot({
 
 
 
-var candytoken = '490749636:AAGz_DYCClBP3ZqfIWSlNwfqCWFS-ZfPVIA';//'470438928:AAE8xFF_kq4QLAI1N_aM3B7T-o1E_UoJH0Q';//'522847314:AAEhARhnwgQ1FqFlMgKRaYtgBXc0yIPTjjc';//'522144670:AAEhYDmZsWu0EBI89GxB65XYMq0sJYnXqDE'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
+var candytoken = '510806049:AAEN3PCj03h_ZQzqkf2R5TbS6xOl7SlMDwQ';//'490749636:AAGz_DYCClBP3ZqfIWSlNwfqCWFS-ZfPVIA';//'470438928:AAE8xFF_kq4QLAI1N_aM3B7T-o1E_UoJH0Q';//'522847314:AAEhARhnwgQ1FqFlMgKRaYtgBXc0yIPTjjc';//'522144670:AAEhYDmZsWu0EBI89GxB65XYMq0sJYnXqDE'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
 var promo = "Please join our channel t.me/ultrapumpsignal and get extra 100 candy!!. Do follow us at twitter https://goo.gl/ozfpqo";
 var bot = new TeleBot({
  //   token: '458278853:AAFxQ5mzgP2rVwA_38PO2MWYQjKLvmPSLec', // Required. Telegram Bot API token.
