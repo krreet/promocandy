@@ -100,7 +100,7 @@ bot = null;
   promo = text;
   return;
 }); */
-  bot.on('newChatMembers' , (msg) => {
+/*  bot.on('newChatMembers' , (msg) => {
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
@@ -116,7 +116,7 @@ bot = null;
        return bot.sendMessage(msg.chat.id,  `Hi , ${name} !! ${promo} ` );
      }}
     // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
-   });
+   });*/
   
 
     bot.on('update' , (msg) => {
