@@ -34,7 +34,12 @@ const bot2 = new TeleBot({
      
    }); 
    
-
+const bot3 = new TeleBot({
+      token: '504533873:AAHArdSOQZrzk0BvpHSz3_asfhrUbBaR88I', // Required. Telegram Bot API token.
+   // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
+       allowedUpdates: [] // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
+     
+   }); 
 
 
 
@@ -124,7 +129,16 @@ bot = null;
      
    
    });
-  
+    bot3.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+     
+       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}` );
+     
+   
+   });
 
    bot.on(/^\/say (.+)$/, (msg, props) => {
     const text = props.match[1];
@@ -139,3 +153,4 @@ bot = null;
 botf.connect();
 bot.connect();
 bot2.connect();
+bot3.connect();
