@@ -135,7 +135,7 @@ bot = null;
      console.log(darta);
 
      
-       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}` );
+       return bot3.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}` );
      
    
    });
