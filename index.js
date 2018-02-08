@@ -41,6 +41,12 @@ const bot3 = new TeleBot({
      
    }); 
 
+const bot4 = new TeleBot({
+      token: '545047533:AAGCJnXQ1VQIYG5uEA6ZyeDfFnip8R9SITY', // Required. Telegram Bot API token.
+   // token: '508295930:AAFPDa1ffAX7EASOP9JolugeVXVKhGzJWlU', // Required. Telegram Bot API token.
+       allowedUpdates: [] // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
+     
+   }); 
 
 
  botf.on(/^\/say (.+)$/, (msg, props) => {
@@ -140,6 +146,17 @@ bot = null;
    
    });
 
+  bot4.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+     
+       return bot4.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}` );
+     
+   
+   });
+
    bot.on(/^\/say (.+)$/, (msg, props) => {
     const text = props.match[1];
     return bot.sendMessage(msg.from.id, text, { replyToMessage: msg.message_id });
@@ -154,3 +171,4 @@ botf.connect();
 bot.connect();
 bot2.connect();
 bot3.connect();
+bot4.connect();
