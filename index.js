@@ -16,7 +16,7 @@ let ftoken = '514572195:AAERzGh1fhXSoqEbrOC-3Cle6Kt9zoKGGsg';// Required. Telegr
 let mtoken = '523699902:AAHZtbThaE-gjQaHOOlA3bfg77hzKFUmiKk'; // Required. Telegram Bot API token. Changchang med_babbot
 let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Telegram Bot API token.  NATASHA slow_babbot
 let vstoken = '526920114:AAHEXFv9ju7ZFeLiXKNk-mAuK04iddV84pQ';// Required. Telegram Bot API token. SASHA vslow_babbot
-let vvstoken = '508633256:AAH0rCkHJSkl5kLksastG0AwoyITwbyccR4';// aditi aka vvs_babbot
+let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
