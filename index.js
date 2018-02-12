@@ -240,7 +240,7 @@ return;
      console.log(darta);
 
      
-       return vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
+       return vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
      
    
    });
@@ -251,8 +251,7 @@ return;
      console.log(darta);
 
      
-       return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    fast.on('update' , (msg) => {
@@ -261,8 +260,7 @@ return;
      console.log(darta);
 
      
-       return fast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return fast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    med.on('update' , (msg) => {
@@ -271,8 +269,7 @@ return;
      console.log(darta);
 
      
-       return med.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return med.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -282,8 +279,7 @@ return;
      console.log(darta);
 
      
-       return slow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return slow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -293,8 +289,7 @@ return;
      console.log(darta);
 
      
-       return vslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return vslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -305,8 +300,7 @@ return;
      console.log(darta);
 
      
-       return vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
-     
+       return vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    
@@ -424,7 +418,7 @@ bot = null;
      console.log(darta);
 
      
-       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg.message_id } );
+       return bot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
      
    
    });
