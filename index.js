@@ -30,7 +30,7 @@ let vftoken = '498032041:AAFTTeXTypck6bhCdfdj9OtOlOM3bJOifoo';// Required. Teleg
 let ftoken = '514572195:AAERzGh1fhXSoqEbrOC-3Cle6Kt9zoKGGsg';// Required. Telegram Bot API token. Maria Misty fast_babbot
 let mtoken = '523699902:AAHZtbThaE-gjQaHOOlA3bfg77hzKFUmiKk'; // Required. Telegram Bot API token. Changchang med_babbot
 let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Telegram Bot API token.  NATASHA slow_babbot
-let vstoken = '526920114:AAHEXFv9ju7ZFeLiXKNk-mAuK04iddV84pQ';// Required. Telegram Bot API token. SASHA vslow_babbot
+let vstoken = '541231414:AAG1szi1ukPijqjInWgKO2zGnfTGyuF4ao4';// Required. Telegram Bot API token. SASHA vslow_babbot
 let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
 let xtra1 = '532896924:AAG66vfruKT_nG3-aT97hG11bKox6VRrit8';//becbabbot
 let xtra2 = '465198599:AAFpFJO-nUGXAIsGbO8Q3FRTCmj3iP_ccoE' ; //stbbabbot
@@ -39,7 +39,7 @@ let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
 
 
 let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
-let xtra2msg = 'Join Here to claim your   Coins @ultrapumpsignal'; //stbbabbot
+let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //stbbabbot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edu_babbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
 function isInArray(bottypes, type) {
