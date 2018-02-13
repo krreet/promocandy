@@ -588,7 +588,7 @@ bot = null;
 x1.connect();
 x2.connect();
 x3.connect();
-//x4.connect();
+x4.connect();
 
 
 bot.connect();
