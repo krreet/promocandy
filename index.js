@@ -330,7 +330,7 @@ const botf = new TeleBot({
 
 
 
-var candytoken = '522144670:AAEhYDmZsWu0EBI89GxB65XYMq0sJYnXqDE'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
+var candytoken = '520899316:AAHvX2qPTDrlhvsGymlSjKoEcSLJet_zqtM'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
 
 const bot = new TeleBot({
 
