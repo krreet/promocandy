@@ -32,12 +32,41 @@ let mtoken = '523699902:AAHZtbThaE-gjQaHOOlA3bfg77hzKFUmiKk'; // Required. Teleg
 let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Telegram Bot API token.  NATASHA slow_babbot
 let vstoken = '526920114:AAHEXFv9ju7ZFeLiXKNk-mAuK04iddV84pQ';// Required. Telegram Bot API token. SASHA vslow_babbot
 let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
+let xtra1 = '532896924:AAG66vfruKT_nG3-aT97hG11bKox6VRrit8';//becbabbot
+let xtra2 = '465198599:AAFpFJO-nUGXAIsGbO8Q3FRTCmj3iP_ccoE' ; //stbbabbot
+let xtra3 = '505263941:AAGZsa0TPyJPdncczR40RZcLKcDHhlc11tU' ; //edu_babbot
+let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
+
+
+let xtra1msg = 'Join Here to claim your BEC Tokens @claimtoken';//becbabbot
+let xtra2msg = 'Join Here to claim your  STB Coins @claimtoken'; //stbbabbot
+let xtra3msg = 'Join Here to claim your EDU Coins @EduCoinOfficiaI'; //edu_babbot
+let xtra4msg = 'Join Here to claim your Coins @claimtoken' ;//karan_jaabot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
 
 const status_babbot = new TeleBot({
     token: '477009936:AAFHOhrbcUedcc-4XA4qKsGsUb29Dc4Ug-E', // Required. Telegram Bot API token. ststus babbot
+   
+ }); 
+
+
+ const x1 = new TeleBot({
+    token: xtra1, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+   
+ }); 
+
+ const x2 = new TeleBot({
+    token: xtra2, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+   
+ }); 
+ const x3 = new TeleBot({
+    token: xtra3, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+   
+ }); 
+ const x4 = new TeleBot({
+    token: xtra4, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
    
  }); 
 
@@ -110,8 +139,75 @@ return;
 
  });
 
+x1.on('leftChatMember' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
 
- 
+
+     let un = msg.left_chat_member.username;
+     let bn = msg.left_chat_member.first_name;
+     let sg = msg.chat.title;
+     let kr = msg.from.username;
+     let kn = msg.from.first_name;
+     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
+
+     return status_babbot.sendMessage('407003132,',`Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    // return;
+   
+   });
+   x2.on('leftChatMember' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+
+     let un = msg.left_chat_member.username;
+     let bn = msg.left_chat_member.first_name;
+     let sg = msg.chat.title;
+     let kr = msg.from.username;
+     let kn = msg.from.first_name;
+     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
+
+     return status_babbot.sendMessage('407003132,',`Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    // return;
+   
+   });
+
+   x3.on('leftChatMember' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+
+     let un = msg.left_chat_member.username;
+     let bn = msg.left_chat_member.first_name;
+     let sg = msg.chat.title;
+     let kr = msg.from.username;
+     let kn = msg.from.first_name;
+     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
+
+     return status_babbot.sendMessage('407003132,',`Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    // return;
+   
+   });
+   x4.on('leftChatMember' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+
+     let un = msg.left_chat_member.username;
+     let bn = msg.left_chat_member.first_name;
+     let sg = msg.chat.title;
+     let kr = msg.from.username;
+     let kn = msg.from.first_name;
+     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
+
+     return status_babbot.sendMessage('407003132,',`Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    // return;
+   
+   });
  vvfast.on('leftChatMember' , (msg) => {
    
     var darta =  JSON.stringify(msg)
@@ -247,7 +343,46 @@ return;
    
    });
 
+   x1.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
 
+     
+       return x1.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra1msg}`   );
+     
+   
+   });
+   x2.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+     
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra2msg}`  );
+     
+   
+   });
+   x3.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+     
+       return x3.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra3msg}`   );
+     
+   
+   });
+   x4.on('update' , (msg) => {
+   
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
+
+     
+       return x4.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra4msg}`  );
+     
+   
+   });
 
    vvfast.on('update' , (msg) => {
    
@@ -450,6 +585,12 @@ bot = null;
 }); */
 
 //botf.connect();
+x1.connect();
+x2.connect();
+x3.connect();
+//x4.connect();
+
+
 bot.connect();
 bot2.connect();
 status_babbot.connect();
