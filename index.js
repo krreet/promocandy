@@ -41,7 +41,7 @@ let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
 let xtra1msg = 'Join Here to claim your BEC Tokens @claimtoken';//becbabbot
 let xtra2msg = 'Join Here to claim your  STB Coins @claimtoken'; //stbbabbot
 let xtra3msg = 'Join Here to claim your EDU Coins @EduCoinOfficiaI'; //edu_babbot
-let xtra4msg = 'Join Here to claim your Coins @claimtoken' ;//karan_jaabot
+let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
