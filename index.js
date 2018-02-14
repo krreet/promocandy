@@ -34,7 +34,7 @@ let vstoken = '541231414:AAG1szi1ukPijqjInWgKO2zGnfTGyuF4ao4';// Required. Teleg
 let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
 let xtra1 = '532896924:AAG66vfruKT_nG3-aT97hG11bKox6VRrit8';//becbabbot
 let xtra2 = '465198599:AAFpFJO-nUGXAIsGbO8Q3FRTCmj3iP_ccoE' ; //stbbabbot
-let xtra3 = '505263941:AAGZsa0TPyJPdncczR40RZcLKcDHhlc11tU' ; //edu_babbot
+let xtra3 = '399924697:AAGRKF977JpWzQvPV0SE3HYsb7JR113eHr8' ; //edu_babbot
 let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
 
 
