@@ -530,7 +530,7 @@ bot = null;
      console.log(darta);
 
      
-       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
