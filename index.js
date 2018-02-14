@@ -45,7 +45,6 @@ let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edu_babbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
 
 let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
-
 https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//cafwelbot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
@@ -525,28 +524,18 @@ bot = null;
    //console.log(darta);
    // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
   }); */
-
-
-
-  cafbot.on('newChatMembers' , (msg2) => {
+  cafbot.on('update' , (msg) => {
    
-    var darta =  JSON.stringify(msg2)
-     console.log("nishabot"+darta);
+    var darta =  JSON.stringify(msg)
+     console.log(darta);
 
-     if (msg2.new_chat_member ){
+     
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+   
+   });
 
-        if(!msg2.new_chat_member.is_bot){
-            var name =msg2.new_chat_member.first_name ;
-            //if(msg.new_chat_member.username)
-           // var name ='@'+msg.new_chat_member.username ; //https://goo.gl/o5FioD
-       var nc2 =  msg2.new_chat_member;
-       console.log(nc2);
-       return cafbot.sendMessage(msg2.chat.id, `Hi , ${name} !! ${cafmsg} ` , { replyToMessage: msg2.message_id });
 
-       
-     }}
-    // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
-   }); 
+  
 
 
 
