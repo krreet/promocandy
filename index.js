@@ -51,7 +51,7 @@ https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//cafwelbot
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 
-t.me/ultrapumpsignal` ;
+t.me/ultrapumpsignal  .   Do follow us at twitter https://goo.gl/ozfpqo` ;
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
