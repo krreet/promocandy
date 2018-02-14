@@ -46,7 +46,7 @@ let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
 
 let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 
-https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//karan_jaabot
+https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//cafwelbot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
@@ -635,3 +635,4 @@ fast.connect();
 med.connect();
 vvfast.connect();
 vvslow.connect();
+cafbot.connect();
