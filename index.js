@@ -51,7 +51,8 @@ https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//cafwelbot
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 t.me/ultrapumpsignal  . 
-Do follow us at twitter https://goo.gl/ozfpqo` ;
+Do follow us at twitter
+ https://goo.gl/ozfpqo` ;
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
@@ -538,7 +539,7 @@ bot = null;
      console.log(darta);
    //  cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id } );
      
-       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id , webPreview: false} );
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
    
    });
 
@@ -549,7 +550,7 @@ bot = null;
      console.log(darta);
     // cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id } );
      
-       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg2}`  , { replyToMessage: msg[0].message.message_id , webPreview: false} );
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg2}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
    
    });
 
