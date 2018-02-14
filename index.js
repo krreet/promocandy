@@ -36,12 +36,17 @@ let xtra1 = '459033614:AAGYAgWOiBHFniSub011sx-dmy2GcH-LK2M';//becbabbot
 let xtra2 = '465198599:AAFpFJO-nUGXAIsGbO8Q3FRTCmj3iP_ccoE' ; //stbbabbot
 let xtra3 = '399924697:AAGRKF977JpWzQvPV0SE3HYsb7JR113eHr8' ; //edu_babbot
 let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
+let caftoken = '485818823:AAFmSNklLwgF4M0QZK2cAAvMUDKWXhnJzKw';//cafbot
 
 
 let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //stbbabbot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edu_babbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
+
+let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
+
+https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//karan_jaabot
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
@@ -51,6 +56,11 @@ const status_babbot = new TeleBot({
    
  }); 
 
+
+ const cafbot = new TeleBot({
+    token: caftoken, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+   
+ }); 
 
  const x1 = new TeleBot({
     token: xtra1, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
@@ -515,6 +525,30 @@ bot = null;
    //console.log(darta);
    // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
   }); */
+
+
+
+  cafbot.on('newChatMembers' , (msg2) => {
+   
+    var darta =  JSON.stringify(msg2)
+     console.log("nishabot"+darta);
+
+     if (msg2.new_chat_member ){
+
+        if(!msg2.new_chat_member.is_bot){
+            var name =msg2.new_chat_member.first_name ;
+            //if(msg.new_chat_member.username)
+           // var name ='@'+msg.new_chat_member.username ; //https://goo.gl/o5FioD
+       var nc2 =  msg2.new_chat_member;
+       console.log(nc2);
+       return cafbot.sendMessage(msg2.chat.id, `Hi , ${name} !! ${cafmsg} ` , { replyToMessage: msg2.message_id });
+
+       
+     }}
+    // return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
+   }); 
+
+
 
 
  bot2.on('newChatMembers' , (msg2) => {
