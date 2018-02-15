@@ -382,7 +382,7 @@ let un = msg[0].message.from.first_name;
 
         un =  '@'+msg[0].message.from.username;
 
-      un =   "<a href="+un+">"+msg[0].message.from.first_name+"</a>";
+      //un =   "<a href="+un+">"+msg[0].message.from.first_name+"</a>";
       //un =  '['+msg[0].message.from.first_name+']('+un+')';
      }
     
