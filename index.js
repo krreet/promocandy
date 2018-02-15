@@ -380,12 +380,14 @@ let un = msg[0].message.from.first_name;
      let un = msg[0].message.from.first_name;
      if(msg[0].message.from.username){
 
-        un =  'tg://user?id='+msg[0].message.from.username;
-      un =  '['+msg[0].message.from.first_name+']('+un+')';
+        un =  '@'+msg[0].message.from.username;
+
+      un =   "<a href="+un+">"+msg[0].message.from.first_name+"</a>";
+      //un =  '['+msg[0].message.from.first_name+']('+un+')';
      }
     
      
-       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}` ,{markdown} );
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}` ,{parseMode : 'HTML'} );
      
    
    });
