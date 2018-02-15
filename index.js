@@ -380,11 +380,12 @@ let un = msg[0].message.from.first_name;
      let un = msg[0].message.from.first_name;
      if(msg[0].message.from.username){
 
-        un =  '@'+msg[0].message.from.username;
+        un =  'tg://user?id='+msg[0].message.from.username;
+      un =  '[inline mention of a user]('+un+')';
      }
-
+    
      
-       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${[msg[0].message.from.first_name](un)} !!  ${xtra2msg}` ,{parseMode : 'Markdown '} );
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}` ,{parseMode : 'Markdown'} );
      
    
    });
