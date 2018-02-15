@@ -390,9 +390,12 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return x3.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra3msg}`   );
+       return x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra3msg}`   );
      
    
    });
@@ -400,9 +403,12 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return x4.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra4msg}`  );
+       return x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra4msg}`  );
      
    
    });
@@ -411,9 +417,13 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+     
+       return vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
      
    
    });
@@ -422,9 +432,13 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+     
+       return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    fast.on('update' , (msg) => {
@@ -432,17 +446,25 @@ let un = msg[0].message.from.first_name;
     var darta =  JSON.stringify(msg)
      console.log(darta);
 
+     if(msg[0].message.from.username){
+
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return fast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+       return fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    med.on('update' , (msg) => {
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return med.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+     
+       return med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -451,8 +473,12 @@ let un = msg[0].message.from.first_name;
     var darta =  JSON.stringify(msg)
      console.log(darta);
 
+     if(msg[0].message.from.username){
+
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return slow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+       return slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -460,9 +486,13 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return vslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+     
+       return vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
 
@@ -471,9 +501,13 @@ let un = msg[0].message.from.first_name;
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+     if(msg[0].message.from.username){
 
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+     
+       return vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
    
    });
    
@@ -545,8 +579,12 @@ bot = null;
     var darta =  JSON.stringify(msg)
      console.log(darta);
    //  cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id } );
-     
-       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
+   if(msg[0].message.from.username){
+
+    un =  '@'+msg[0].message.from.username;
+ }
+ 
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
    
    });
 
@@ -556,8 +594,12 @@ bot = null;
     var darta =  JSON.stringify(msg)
      console.log(darta);
     // cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg}`  , { replyToMessage: msg[0].message.message_id } );
+    if(msg[0].message.from.username){
+
+        un =  '@'+msg[0].message.from.username;
+     }
      
-       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${cafmsg2}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
+       return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`  , { replyToMessage: msg[0].message.message_id , webPreview: true} );
    
    });
 
