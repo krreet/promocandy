@@ -33,14 +33,14 @@ let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Teleg
 let vstoken = '541231414:AAG1szi1ukPijqjInWgKO2zGnfTGyuF4ao4';// Required. Telegram Bot API token. SASHA vslow_babbot
 let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
 let xtra1 = '459033614:AAGYAgWOiBHFniSub011sx-dmy2GcH-LK2M';//becbabbot
-let xtra2 = '465198599:AAFpFJO-nUGXAIsGbO8Q3FRTCmj3iP_ccoE' ; //stbbabbot
+let xtra2 = '426160897:AAGqBzSld5PSkXAVvW4JrDCBFtlinT6BJqY' ; //cafbot3bot
 let xtra3 = '399924697:AAGRKF977JpWzQvPV0SE3HYsb7JR113eHr8' ; //edu_babbot
 let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY' ;//karan_jaabot
 let caftoken = '485818823:AAFmSNklLwgF4M0QZK2cAAvMUDKWXhnJzKw';//cafbot
 
 
 let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
-let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //stbbabbot
+let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edu_babbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal' ;//karan_jaabot
 
@@ -363,9 +363,12 @@ x1.on('leftChatMember' , (msg) => {
    
     var darta =  JSON.stringify(msg)
      console.log(darta);
+let un = msg[0].message.from.first_name;
+     if(msg[0].message.from.username){
 
-     
-       return x1.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra1msg}`   );
+        un =  msg[0].message.from.username;
+     }
+       return x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`   );
      
    
    });
@@ -374,8 +377,12 @@ x1.on('leftChatMember' , (msg) => {
     var darta =  JSON.stringify(msg)
      console.log(darta);
 
-     
-       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  ${xtra2msg}`  );
+     let un = msg[0].message.from.first_name;
+     if(msg[0].message.from.username){
+
+        un =  msg[0].message.from.username;
+     }
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}`  );
      
    
    });
