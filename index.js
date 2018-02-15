@@ -382,7 +382,9 @@ let un = msg[0].message.from.first_name;
 
         un =  '@'+msg[0].message.from.username;
      }
-       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}`  );
+
+     
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${[msg[0].message.from.first_name](un)} !!  ${xtra2msg}`  );
      
    
    });
