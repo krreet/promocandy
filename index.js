@@ -381,7 +381,7 @@ let un = msg[0].message.from.first_name;
      if(msg[0].message.from.username){
 
         un =  'tg://user?id='+msg[0].message.from.username;
-      un =  '[inline mention of a user]('+un+')';
+      un =  '['+msg[0].message.from.first_name+']('+un+')';
      }
     
      
