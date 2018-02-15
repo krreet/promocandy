@@ -385,7 +385,7 @@ let un = msg[0].message.from.first_name;
      }
     
      
-       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}` ,{parseMode : 'Markdown'} );
+       return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}` ,{markdown} );
      
    
    });
