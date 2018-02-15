@@ -366,7 +366,7 @@ x1.on('leftChatMember' , (msg) => {
 let un = msg[0].message.from.first_name;
      if(msg[0].message.from.username){
 
-        un =  msg[0].message.from.username;
+        un =  '@'+msg[0].message.from.username;
      }
        return x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`   );
      
@@ -380,7 +380,7 @@ let un = msg[0].message.from.first_name;
      let un = msg[0].message.from.first_name;
      if(msg[0].message.from.username){
 
-        un =  msg[0].message.from.username;
+        un =  '@'+msg[0].message.from.username;
      }
        return x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra2msg}`  );
      
