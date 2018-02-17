@@ -431,7 +431,7 @@ x1.on(/^\/say (.+)$/, async function (msg, props) {
         .map('title')
         .value()
     for (let i in arrayOfMessages) {
-        await x2.deleteMessage(text, arrayOfMessages[i]);
+        await x1.deleteMessage(text, arrayOfMessages[i]);
     }
 
     if (!(stopg.indexOf(text) > -1)) {
