@@ -1407,20 +1407,20 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
 }); */
 
 //botf.connect();
-// x1.connect();
-// x2.connect();
+ x1.connect();
+ x2.connect();
  x3.connect();
-// x4.connect();
+ x4.connect();
 
 
-// bot.connect();
-// bot2.connect();
+ bot.connect();
+ bot2.connect();
  status_babbot.connect();
-// vfast.connect();
-// slow.connect();
-// vslow.connect();
-// fast.connect();
-// med.connect();
-// vvfast.connect();
-// vvslow.connect();
-// cafbot.connect();
+ vfast.connect();
+ slow.connect();
+ vslow.connect();
+fast.connect();
+ med.connect();
+ vvfast.connect();
+vvslow.connect();
+cafbot.connect();
