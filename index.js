@@ -430,7 +430,7 @@ x1.on('update', async function (msg) {
 
 
 x1.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -506,7 +506,7 @@ x2.on('update', async function (msg) {
 
 
 x2.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -584,7 +584,7 @@ x3.on('update', async function (msg) {
 
 
 x3.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -660,7 +660,7 @@ x4.on('update', async function (msg) {
 
 
 x4.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -736,7 +736,7 @@ vvfast.on('update', async function (msg) {
 
 
 vvfast.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -813,7 +813,7 @@ vfast.on('update', async function (msg) {
 
 
 vfast.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -889,7 +889,7 @@ fast.on('update', async function (msg) {
 
 
 fast.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -965,7 +965,7 @@ med.on('update', async function (msg) {
 
 
 med.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -1042,7 +1042,7 @@ slow.on('update', async function (msg) {
 
 
 slow.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -1119,7 +1119,7 @@ vslow.on('update', async function (msg) {
 
 
 vslow.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -1198,7 +1198,7 @@ vvslow.on('update', async function (msg) {
 
 
 vvslow.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
@@ -1325,7 +1325,7 @@ cafbot.on('update', async function (msg) {
 
 
 cafbot.on(/^\/say (.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
     let arrayOfMessages = db.get('msglog').filter({ id: text })
         .map('title')
         .value()
