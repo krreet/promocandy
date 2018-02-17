@@ -400,7 +400,7 @@ x1.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -479,7 +479,7 @@ x2.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -557,7 +557,7 @@ x3.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -633,7 +633,7 @@ x4.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -709,7 +709,7 @@ vvfast.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -786,7 +786,7 @@ vfast.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -862,7 +862,7 @@ fast.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -938,7 +938,7 @@ med.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -1015,7 +1015,7 @@ slow.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -1092,7 +1092,7 @@ vslow.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -1171,7 +1171,7 @@ vvslow.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
@@ -1293,7 +1293,7 @@ cafbot.on('update', async function (msg) {
 
         console.log(size + "  " + usernameorid);
 
-        if (size >= 2) {
+        if (size >= 3) {
 
             let tobedeleted = db.get('msglog').filter({ id: usernameorid })
                 .map('title')
