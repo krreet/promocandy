@@ -123,7 +123,7 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
         array.splice(index, 1);
     }
 
-    return await status_babbot.sendMessage(msg.from.id, JSON.stringify(stopg));
+    return await status_babbot.sendMessage(msg.from.id,"text is index is "+text+"  "+index+"  "+JSON.stringify(stopg));
 
 });
 
