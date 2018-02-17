@@ -173,7 +173,7 @@ x1.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
 
@@ -190,7 +190,7 @@ x2.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -208,7 +208,7 @@ x3.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -225,7 +225,7 @@ x4.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -242,7 +242,7 @@ vvfast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -263,7 +263,7 @@ vfast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -282,7 +282,7 @@ fast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -301,7 +301,7 @@ med.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -320,7 +320,7 @@ slow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -340,7 +340,7 @@ vslow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -359,7 +359,7 @@ vvslow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.title;
+    let sg = msg.chat.username;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
