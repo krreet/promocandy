@@ -115,9 +115,9 @@ const vvslow = new TeleBot({
 });
 
 status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
-    const text = props.match[1];
+    let text = props.match[1];
 
-    var index = stopg.indexOf(text);
+    let index = stopg.indexOf(text);
 
     if (index > -1) {
         array.splice(index, 1);
