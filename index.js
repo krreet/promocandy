@@ -22,18 +22,18 @@ let med_g = ["ALPHAPROTOCOL"];
 let slow_g = ["sayofficial", "AFFILiATECOINTALK", "energitoken", "polymathnetwork", "gonetwork_ch2"];
 let vslow_g = ["hurifyico", "candygame", "AIFUNS_Z", "earairdrop"];
 let vvslow_g = ["officialios"];
-let vvftoken = '508633256:AAH0rCkHJSkl5kLksastG0AwoyITwbyccR4';//sania aka vvf_babbot
-let vftoken = '498032041:AAFTTeXTypck6bhCdfdj9OtOlOM3bJOifoo';// Required. Telegram Bot API token. Megha Dutta vfast_babbot
-let ftoken = '514572195:AAERzGh1fhXSoqEbrOC-3Cle6Kt9zoKGGsg';// Required. Telegram Bot API token. Maria Misty fast_babbot
-let mtoken = '523699902:AAHZtbThaE-gjQaHOOlA3bfg77hzKFUmiKk'; // Required. Telegram Bot API token. Changchang med_babbot
-let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Telegram Bot API token.  NATASHA slow_babbot
-let vstoken = '541231414:AAG1szi1ukPijqjInWgKO2zGnfTGyuF4ao4';// Required. Telegram Bot API token. SASHA vslow_babbot
-let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
-let xtra1 = '459033614:AAGYAgWOiBHFniSub011sx-dmy2GcH-LK2M';//becbabbot
-let xtra2 = '542223581:AAGp2wSxpJLvA5I7sLFL4PGZILjsrLiA7NY'; //cafbot4bot
-let xtra3 = '482126210:AAE4yJ-RMnaLGTVUEyETYRsE929MzyqFt5A'; //edbabbot
-let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY';//karan_jaabot
-let caftoken = '485818823:AAFmSNklLwgF4M0QZK2cAAvMUDKWXhnJzKw';//cafbot
+let vvftoken = '419571025:AAGao9eeb_hdWKmUhZx3T1qnmU6Q7esUXhw';//sania aka vvfbabbot
+let vftoken = '490311395:AAEdkvUXpnEzN6cs3O8-XAUPp7WeaoeUbF4';// Required. Telegram Bot API token. Megha Dutta vfbabbot
+let ftoken = '462187839:AAHVtmruiQoXGV5Bb28Fl4qevYpE3m_9AVs';// Required. Telegram Bot API token. Maria Misty fbabbot
+let mtoken = '524655667:AAFQLJHOzIG-hxqR5hgGbO9ZD10-bm2JY-o'; // Required. Telegram Bot API token. Changchang mbabbot
+let stoken = '507972597:AAH_yfATs8vBj_Euk6JUT7xOWOqfGnxbn4M'; // Required. Telegram Bot API token.  NATASHA slbabbot
+let vstoken = '524873436:AAF6SklKY45wAMg0CGD0q29QWxoxp5IfEqA';// Required. Telegram Bot API token. SASHA vsbabbot
+let vvstoken = '518243930:AAE-b8FxGOx-_eGppzaLiGsQeVI1S0vH59Y';// aditi aka vvsbabbot
+let xtra1 = '540001794:AAF4ZFxr4FkKESxLxLi_HdsQpKJMMxi0VMQ';// official Claim aka becbabbot
+let xtra2 = '542223581:AAGp2wSxpJLvA5I7sLFL4PGZILjsrLiA7NY'; //  Claim Token aka  cafbot5bot
+let xtra3 = '482126210:AAE4yJ-RMnaLGTVUEyETYRsE929MzyqFt5A'; //admin aka edbabbot
+let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
+let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbabbot
 
 
 let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
@@ -128,7 +128,6 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
 
 
 
-
 status_babbot.on(/^\/status (.+)$/, (msg, props) => {
     console.log(JSON.stringify(msg) + 'msg');
     console.log(JSON.stringify(props) + 'props');
@@ -173,7 +172,7 @@ x1.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
 
@@ -190,7 +189,7 @@ x2.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -208,7 +207,7 @@ x3.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -225,7 +224,7 @@ x4.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -242,7 +241,7 @@ vvfast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -263,7 +262,7 @@ vfast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -282,7 +281,7 @@ fast.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -301,7 +300,7 @@ med.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -320,7 +319,7 @@ slow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -340,7 +339,7 @@ vslow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -359,7 +358,7 @@ vvslow.on('leftChatMember', (msg) => {
 
     let un = msg.left_chat_member.username;
     let bn = msg.left_chat_member.first_name;
-    let sg = msg.chat.username;
+    let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
@@ -445,7 +444,7 @@ x1.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return x1.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x1.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
 });
 
 x2.on('update', async function (msg) {
@@ -522,7 +521,7 @@ x2.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return x2.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x2.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
 });
 
 
@@ -600,7 +599,7 @@ x3.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return x3.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x3.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
 });
 x4.on('update', async function (msg) {
 
@@ -676,7 +675,7 @@ x4.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return x4.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x4.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
 });
 vvfast.on('update', async function (msg) {
 
