@@ -122,7 +122,7 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
     if (index > -1) {
         array.splice(index, 1);
     } */
-    stopg = stopg.filter(e => e !== text); 
+    stopg = stopg.filter(e => e !== "@codeauto123"); 
     return await status_babbot.sendMessage(msg.from.id,"text is index is "+text+"   "+JSON.stringify(stopg));
 
 });
