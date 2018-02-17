@@ -386,7 +386,7 @@ x1.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -465,7 +465,7 @@ x2.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -543,7 +543,7 @@ x3.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -619,7 +619,7 @@ x4.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -695,7 +695,7 @@ vvfast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog =await vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -772,7 +772,7 @@ vfast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog =await vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -848,7 +848,7 @@ fast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -924,7 +924,7 @@ med.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -1001,7 +1001,7 @@ slow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -1078,7 +1078,7 @@ vslow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog =await vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -1155,7 +1155,9 @@ vvslow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog =await vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+       
+   
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -1215,6 +1217,10 @@ vvslow.on(/^\/say (.+)$/, async function (msg, props) {
     return vvslow.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
 });
 
+const botf = new TeleBot({
+    token: '407044467:AAGMSmZzfdX3oZOxiX7OH8OGjRl0C8n3hgA', // Required. Telegram Bot API token. token bot
+   
+ }); 
 
 
 var candytoken = '520899316:AAHvX2qPTDrlhvsGymISjKoEcSLJet_zqtM'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
@@ -1273,7 +1279,7 @@ cafbot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+        let msglog = await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -1401,20 +1407,20 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
 }); */
 
 //botf.connect();
-x1.connect();
-x2.connect();
-x3.connect();
-x4.connect();
+// x1.connect();
+// x2.connect();
+ x3.connect();
+// x4.connect();
 
 
-bot.connect();
-bot2.connect();
-status_babbot.connect();
-vfast.connect();
-slow.connect();
-vslow.connect();
-fast.connect();
-med.connect();
-vvfast.connect();
-vvslow.connect();
-cafbot.connect();
+// bot.connect();
+// bot2.connect();
+ status_babbot.connect();
+// vfast.connect();
+// slow.connect();
+// vslow.connect();
+// fast.connect();
+// med.connect();
+// vvfast.connect();
+// vvslow.connect();
+// cafbot.connect();
