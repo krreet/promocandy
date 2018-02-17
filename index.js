@@ -10,19 +10,7 @@ db.defaults({ msglog: [] })
 db.get('msglog')
     .remove()
     .write();
-/*const http = require('http');
 
-// Configure our HTTP server to respond with Hello World to all requests.
-const server = http.createServer((request, response) => {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World\n");
-});
-
-// Last, but not least, listen on port 8080
-// The environment variable PORT is automatically defined and equals to 8080
-server.listen(process.env.PORT, '0.0.0.0');
-
-*/
 
 let stopg = [];
 let promo = "Please join our channel t.me/ultrapumpsignal and get FREE Airdrops!!. Do follow us at twitter https://goo.gl/ozfpqo";
@@ -42,7 +30,7 @@ let stoken = '541983996:AAGP5TWESVky9M7W8owBN0TDSNWoQqddWgs'; // Required. Teleg
 let vstoken = '541231414:AAG1szi1ukPijqjInWgKO2zGnfTGyuF4ao4';// Required. Telegram Bot API token. SASHA vslow_babbot
 let vvstoken = '468516961:AAH-aJwvpcG3RcUg5Vd_VkVSJDsmm-d8liQ';// aditi aka vvsbabbot
 let xtra1 = '459033614:AAGYAgWOiBHFniSub011sx-dmy2GcH-LK2M';//becbabbot
-let xtra2 = '522840427:AAHiVcmgK46bY6fmhZzHRo-EE9dp5_bVST4'; //cafbot4bot
+let xtra2 = '542223581:AAGp2wSxpJLvA5I7sLFL4PGZILjsrLiA7NY'; //cafbot4bot
 let xtra3 = '399924697:AAGRKF977JpWzQvPV0SE3HYsb7JR113eHr8'; //edu_babbot
 let xtra4 = '529537511:AAF4PiS4OuVtg6GKpqlHmF-BoCOskq70qaY';//karan_jaabot
 let caftoken = '485818823:AAFmSNklLwgF4M0QZK2cAAvMUDKWXhnJzKw';//cafbot
@@ -128,7 +116,7 @@ const vvslow = new TeleBot({
 
 status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
     const text = props.match[1];
-   
+
     var index = stopg.indexOf(text);
 
     if (index > -1) {
@@ -159,18 +147,18 @@ status_babbot.on(/^\/status (.+)$/, (msg, props) => {
     for (var i = 0; i < eval(bottype_g).length; i++) {
         let cg = '';
         cg = eval(bottype_g)[i];
-       
+
         let kicked = '';
         eval(bottype).sendMessage('@' + eval(bottype_g)[i], ".").catch(error => {
             console.log('caught', error);
             console.log(i);
             kicked = cg;
-          
+
             status_babbot.sendMessage(msg.from.id, `@${bottype}_babbot kicked from  @${cg} `);
 
         });
 
-      
+
 
     }
     return;
@@ -188,10 +176,10 @@ x1.on('leftChatMember', (msg) => {
     let sg = msg.chat.title;
     let kr = msg.from.username;
     let kn = msg.from.first_name;
- 
+
 
     return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
-  
+
 
 });
 x2.on('leftChatMember', (msg) => {
@@ -433,7 +421,7 @@ x1.on('update', async function (msg) {
         }
 
     }
-return;
+    return;
     // return x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`   );
 
 
@@ -1247,7 +1235,7 @@ const bot2 = new TeleBot({
 
 botf.on(/^\/say (.+)$/, (msg, props) => {
     const text = props.match[1];
-    
+
     candytoken = text;
 
 
@@ -1255,7 +1243,7 @@ botf.on(/^\/say (.+)$/, (msg, props) => {
     bot.stop("polling stopped bot");
     bot = null;
     bot = new TeleBot({
-        
+
 
 
         token: candytoken,// Required. Telegram Bot API token.
@@ -1270,7 +1258,7 @@ botf.on(/^\/say (.+)$/, (msg, props) => {
 
 cafbot.on('update', async function (msg) {
 
-  var darta = JSON.stringify(msg)
+    var darta = JSON.stringify(msg)
     console.log(darta);
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
@@ -1321,9 +1309,9 @@ cafbot.on('update', async function (msg) {
 
     }
 
-return;
-   
-  //  return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+    return;
+
+    //  return cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
 
 });
 
@@ -1360,7 +1348,7 @@ bot2.on('newChatMembers', (msg2) => {
 
         if (!msg2.new_chat_member.is_bot) {
             var name = msg2.new_chat_member.first_name;
-           
+
             var nc2 = msg2.new_chat_member;
             console.log(nc2);
             return bot2.sendMessage(msg2.chat.id, `Hi , ${name} !! ${promo} `, { replyToMessage: msg2.message_id });
@@ -1368,7 +1356,7 @@ bot2.on('newChatMembers', (msg2) => {
 
         }
     }
-    
+
 });
 
 bot.on('newChatMembers', (msg) => {
@@ -1380,13 +1368,13 @@ bot.on('newChatMembers', (msg) => {
 
         if (!msg.new_chat_member.is_bot) {
             var name = msg.new_chat_member.first_name;
-           
+
             var nc = msg.new_chat_member;
             console.log(nc);
             return bot.sendMessage(msg.chat.id, `Hi , ${name} !! ${promo} `);
         }
     }
-   
+
 });
 
 
