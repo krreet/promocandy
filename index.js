@@ -116,14 +116,14 @@ const vvslow = new TeleBot({
 
 status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
     let text = props.match[1];
-
+/* 
     let index = stopg.indexOf(text);
 
     if (index > -1) {
         array.splice(index, 1);
-    }
-
-    return await status_babbot.sendMessage(msg.from.id,"text is index is "+text+"  "+index+"  "+JSON.stringify(stopg));
+    } */
+    stopg = stopg.filter(e => e !== text); 
+    return await status_babbot.sendMessage(msg.from.id,"text is index is "+text+"   "+JSON.stringify(stopg));
 
 });
 
