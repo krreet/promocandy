@@ -373,7 +373,7 @@ x1.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -386,7 +386,7 @@ x1.on('update', async function (msg) {
         let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -452,7 +452,7 @@ x2.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -465,7 +465,7 @@ x2.on('update', async function (msg) {
         let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -530,7 +530,7 @@ x3.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -543,7 +543,7 @@ x3.on('update', async function (msg) {
         let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -606,7 +606,7 @@ x4.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -619,7 +619,7 @@ x4.on('update', async function (msg) {
         let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -682,7 +682,7 @@ vvfast.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -695,7 +695,7 @@ vvfast.on('update', async function (msg) {
         let msglog =await vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -759,7 +759,7 @@ vfast.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -772,7 +772,7 @@ vfast.on('update', async function (msg) {
         let msglog =await vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -835,7 +835,7 @@ fast.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -848,7 +848,7 @@ fast.on('update', async function (msg) {
         let msglog = await fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -911,7 +911,7 @@ med.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -924,7 +924,7 @@ med.on('update', async function (msg) {
         let msglog = await med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -988,7 +988,7 @@ slow.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -1001,7 +1001,7 @@ slow.on('update', async function (msg) {
         let msglog = await slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1065,7 +1065,7 @@ vslow.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -1078,7 +1078,7 @@ vslow.on('update', async function (msg) {
         let msglog =await vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1142,7 +1142,7 @@ vvslow.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -1157,7 +1157,7 @@ vvslow.on('update', async function (msg) {
    
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1266,7 +1266,7 @@ cafbot.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+       // thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
@@ -1279,7 +1279,7 @@ cafbot.on('update', async function (msg) {
         let msglog = await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
-            usernameorid = '@' + msg[0].message.chat.username
+           /* usernameorid = '@' + msg[0].message.chat.username*/
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1404,20 +1404,20 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
 }); */
 
 //botf.connect();
-//  x1.connect();
- //// x2.connect();
-//  x3.connect();
-//  x4.connect();
+  x1.connect();
+ x2.connect();
+  x3.connect();
+  x4.connect();
 
 
-//  bot.connect();
-//  bot2.connect();
-//  status_babbot.connect();
-//  vfast.connect();
-//  slow.connect();
-//  vslow.connect();
-// fast.connect();
-//  med.connect();
-//  vvfast.connect();
-// vvslow.connect();
-// cafbot.connect();
+  bot.connect();
+ bot2.connect();
+ status_babbot.connect();
+  vfast.connect();
+  slow.connect();
+  vslow.connect();
+ fast.connect();
+  med.connect();
+  vvfast.connect();
+ vvslow.connect();
+ cafbot.connect();
