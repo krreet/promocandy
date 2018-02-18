@@ -1405,14 +1405,14 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
 
 //botf.connect();
 //  x1.connect();
- // x2.connect();
+ //// x2.connect();
 //  x3.connect();
 //  x4.connect();
 
 
 //  bot.connect();
 //  bot2.connect();
- // status_babbot.connect();
+//  status_babbot.connect();
 //  vfast.connect();
 //  slow.connect();
 //  vslow.connect();
