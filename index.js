@@ -139,7 +139,7 @@ status_babbot.on(/^\/rem(.+)$/, async function (msg, props) {
     
     text = text.trim();
 
-    if(!(isNaN(text)){
+    if(!(isNaN(text))){
 
         text = Number(text);
     }
