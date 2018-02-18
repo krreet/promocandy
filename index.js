@@ -134,6 +134,17 @@ status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
 
 
 
+status_babbot.on(/^\/rem(.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+    text = text.trim();
+    activg = activg.filter(e => e !== text);
+  
+    return await status_babbot.sendMessage(msg.from.id, "manually removed" + text + "   " + JSON.stringify(activg));
+
+});
+
+
 status_babbot.on(/^\/status (.+)$/, (msg, props) => {
     console.log(JSON.stringify(msg) + 'msg');
     console.log(JSON.stringify(props) + 'props');
