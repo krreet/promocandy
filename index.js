@@ -175,7 +175,7 @@ x1.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
 
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
 
 
 });
@@ -192,7 +192,7 @@ x2.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -210,7 +210,7 @@ x3.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -227,7 +227,7 @@ x4.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -244,7 +244,7 @@ vvfast.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -265,7 +265,7 @@ vfast.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -284,7 +284,7 @@ fast.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -303,7 +303,7 @@ med.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -322,7 +322,7 @@ slow.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -342,7 +342,7 @@ vslow.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
@@ -361,7 +361,7 @@ vvslow.on('leftChatMember', (msg) => {
     let kn = msg.from.first_name;
     //  return vfast.sendMessage(msg[0].message.chat.id, `Hi , ${msg[0].message.from.first_name} !!  hii` );
 
-    return status_babbot.sendMessage('407003132,', `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
+    return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
     // return;
 
 });
