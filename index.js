@@ -127,7 +127,7 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
 
 status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
     
-    return  await status_babbot.sendMessage(msg.from.id, "active groups currently beta" + text + "   " + JSON.stringify(activg));
+    return  await status_babbot.sendMessage(msg.from.id, "active groups currently beta   " + JSON.stringify(activg));
 
 
 });
