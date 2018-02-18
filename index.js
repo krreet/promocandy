@@ -121,13 +121,13 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
     text = text.trim();
     stopg = stopg.filter(e => e !== text);
   
-    return await status_babbot.sendMessage(msg.from.id, "stopped grps by admin  " + text + "   " + JSON.stringify(stopg));
+    return await status_babbot.sendMessage(-1001224956341, "stopped grps by admin  " + text + "   " + JSON.stringify(stopg));
 
 });
 
 status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
     
-    return  await status_babbot.sendMessage(msg.from.id, "active groups currently beta   " + JSON.stringify(activg));
+    return  await status_babbot.sendMessage(-1001224956341, "active groups currently beta   " + JSON.stringify(activg));
 
 
 });
@@ -140,7 +140,7 @@ status_babbot.on(/^\/rem(.+)$/, async function (msg, props) {
     text = text.trim();
     activg = activg.filter(e => e !== text);
   
-    return await status_babbot.sendMessage(msg.from.id, "manually removed" + text + "   " + JSON.stringify(activg));
+    return await status_babbot.sendMessage(-1001224956341, "manually removed" + text + "   " + JSON.stringify(activg));
 
 });
 
