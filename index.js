@@ -145,6 +145,14 @@ status_babbot.on(/^\/rem(.+)$/, async function (msg, props) {
 });
 
 
+status_babbot.on(/^\/delall(.+)$/, async function (msg, props) {
+    
+    activg = [];
+  
+    return await status_babbot.sendMessage(-1001224956341, "manually removed all   " + JSON.stringify(activg));
+
+});
+
 status_babbot.on(/^\/status (.+)$/, (msg, props) => {
     console.log(JSON.stringify(msg) + 'msg');
     console.log(JSON.stringify(props) + 'props');
@@ -469,7 +477,7 @@ x1.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return await x1.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x1.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 x2.on('update', async function (msg) {
@@ -547,7 +555,7 @@ x2.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return await x2.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x2.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 
@@ -626,7 +634,7 @@ x3.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return await x3.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x3.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 x4.on('update', async function (msg) {
 
@@ -703,7 +711,7 @@ x4.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return await x4.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return await x4.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 vvfast.on('update', async function (msg) {
 
@@ -780,7 +788,7 @@ vvfast.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return vvfast.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return vvfast.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 vfast.on('update', async function (msg) {
@@ -858,7 +866,7 @@ vfast.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return vfast.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return vfast.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 fast.on('update', async function (msg) {
 
@@ -935,7 +943,7 @@ fast.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return fast.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return fast.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 med.on('update', async function (msg) {
 
@@ -1012,7 +1020,7 @@ med.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return med.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return med.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 slow.on('update', async function (msg) {
@@ -1090,7 +1098,7 @@ slow.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return slow.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return slow.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 vslow.on('update', async function (msg) {
@@ -1168,7 +1176,7 @@ vslow.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return vslow.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return vslow.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 vvslow.on('update', async function (msg) {
@@ -1248,7 +1256,7 @@ vvslow.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return vvslow.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return vvslow.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 const botf = new TeleBot({
@@ -1376,7 +1384,7 @@ cafbot.on(/^\/say (.+)$/, async function (msg, props) {
     db.get('msglog')
         .remove({ id: text })
         .write();
-    return cafbot.sendMessage(msg.from.id, "deleted from " + text, { replyToMessage: msg.message_id });
+    return cafbot.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
 
