@@ -13,6 +13,7 @@ db.get('msglog')
 
 
 let stopg = [];
+let activg = [];
 let promo = "Please join our channel t.me/ultrapumpsignal and get FREE Airdrops!!. Do follow us at twitter https://goo.gl/ozfpqo";
 let bottypes = ["vvfast", "vfast", "fast", "med", "slow", "vslow", "vvslow"];
 let vvfast_g = ["officialios"];
@@ -118,11 +119,18 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
     let text = props.match[1];
 
     text = text.trim();
-    stopg = stopg.filter(e => e !== text); 
-    return await status_babbot.sendMessage(msg.from.id,"text  "+text+"   "+JSON.stringify(stopg));
+    stopg = stopg.filter(e => e !== text);
+  
+    return await status_babbot.sendMessage(msg.from.id, "stopped grps by admin  " + text + "   " + JSON.stringify(stopg));
 
 });
 
+status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
+    
+    return  await status_babbot.sendMessage(msg.from.id, "active groups currently beta" + text + "   " + JSON.stringify(activg));
+
+
+});
 
 
 
@@ -174,7 +182,7 @@ x1.on('leftChatMember', (msg) => {
     let kr = msg.from.username;
     let kn = msg.from.first_name;
 
-
+    activg = activg.filter(e => e !== text);
     return status_babbot.sendMessage(-1001224956341, `Bot @${un} aka ${bn} was kicked from @${sg} by @${kr} aka ${kn}`);
 
 
@@ -384,9 +392,17 @@ x1.on('update', async function (msg) {
         }
 
         let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) {
+            if (!(activg.indexOf(usernameorid) > -1)) {
+
+                activg.push(usernameorid);
+            }
+
+        }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -466,6 +482,7 @@ x2.on('update', async function (msg) {
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -544,6 +561,7 @@ x3.on('update', async function (msg) {
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -620,6 +638,7 @@ x4.on('update', async function (msg) {
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -692,10 +711,11 @@ vvfast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog =await vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await vvfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -769,10 +789,11 @@ vfast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog =await vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await vfast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -845,10 +866,11 @@ fast.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await fast.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -921,10 +943,11 @@ med.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await med.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -998,10 +1021,11 @@ slow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await slow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1075,10 +1099,11 @@ vslow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog =await vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
+        let msglog = await vslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1152,12 +1177,13 @@ vvslow.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog =await vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`  , { replyToMessage: msg[0].message.message_id } );
-       
-   
+        let msglog = await vvslow.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${promo}`, { replyToMessage: msg[0].message.message_id });
+
+
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1216,8 +1242,8 @@ vvslow.on(/^\/say (.+)$/, async function (msg, props) {
 
 const botf = new TeleBot({
     token: '407044467:AAGMSmZzfdX3oZOxiX7OH8OGjRl0C8n3hgA', // Required. Telegram Bot API token. token bot
-   
- }); 
+
+});
 
 
 var candytoken = '520899316:AAHvX2qPTDrlhvsGymISjKoEcSLJet_zqtM'; //'520368868:AAHPua5_C7YGCEd2KCBjVaXNtm1dTSXg1-w';
@@ -1280,6 +1306,7 @@ cafbot.on('update', async function (msg) {
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
         console.log(JSON.stringify(msglog) + " msglog");
         db.get('msglog')
             .push({ id: usernameorid, title: msglog.result.message_id })
@@ -1404,20 +1431,20 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
 }); */
 
 //botf.connect();
- x1.connect();
- x2.connect();
- x3.connect();
- x4.connect();
+x1.connect();
+x2.connect();
+x3.connect();
+x4.connect();
 
 
- bot.connect();
- bot2.connect();
- status_babbot.connect();
- vfast.connect();
- slow.connect();
- vslow.connect();
+bot.connect();
+bot2.connect();
+status_babbot.connect();
+vfast.connect();
+slow.connect();
+vslow.connect();
 fast.connect();
- med.connect();
- vvfast.connect();
+med.connect();
+vvfast.connect();
 vvslow.connect();
 cafbot.connect();
