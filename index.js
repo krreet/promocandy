@@ -415,7 +415,7 @@ x1.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
 
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
@@ -502,7 +502,7 @@ x2.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -581,7 +581,7 @@ x3.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -658,7 +658,7 @@ x4.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id }));
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
