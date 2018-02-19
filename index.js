@@ -658,7 +658,7 @@ x4.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id }));
+        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
