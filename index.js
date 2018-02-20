@@ -37,7 +37,7 @@ let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka k
 let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbabbot
 
 
-let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
+let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
