@@ -120,14 +120,14 @@ status_babbot.on(/^\/clear(.+)$/, async function (msg, props) {
 
     text = text.trim();
     stopg = stopg.filter(e => e !== text);
-  
+
     return await status_babbot.sendMessage(-1001224956341, "stopped grps by admin  " + text + "   " + JSON.stringify(stopg));
 
 });
 
 status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
-    
-    return  await status_babbot.sendMessage(-1001224956341, "active groups currently beta   " + JSON.stringify(activg));
+
+    return await status_babbot.sendMessage(-1001224956341, "active groups currently beta   " + JSON.stringify(activg));
 
 
 });
@@ -136,24 +136,24 @@ status_babbot.on(/^\/act(.+)$/, async function (msg, props) {
 
 status_babbot.on(/^\/rem(.+)$/, async function (msg, props) {
     let text = props.match[1];
-    
+
     text = text.trim();
 
-    if(!(isNaN(text))){
+    if (!(isNaN(text))) {
 
         text = Number(text);
     }
     activg = activg.filter(e => e !== text);
-  
+
     return await status_babbot.sendMessage(-1001224956341, "manually removed" + text + "   " + JSON.stringify(activg));
 
 });
 
 
 status_babbot.on(/^\/delall(.+)$/, async function (msg, props) {
-    
+
     activg = [];
-  
+
     return await status_babbot.sendMessage(-1001224956341, "manually removed all   " + JSON.stringify(activg));
 
 });
@@ -725,7 +725,7 @@ vvfast.on('update', async function (msg) {
     let thisg = msg[0].message.chat.id;
     if (msg[0].message.chat.username) {
 
-        thisg = '@' + msg[0].message.chat.username;
+      thisg = '@' + msg[0].message.chat.username;
     }
 
     if (!(stopg.indexOf(thisg) > -1)) {
