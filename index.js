@@ -32,14 +32,14 @@ let vstoken = '524873436:AAF6SklKY45wAMg0CGD0q29QWxoxp5IfEqA';// Required. Teleg
 let vvstoken = '518243930:AAE-b8FxGOx-_eGppzaLiGsQeVI1S0vH59Y';// aditi aka vvsbabbot
 let xtra1 = '540001794:AAF4ZFxr4FkKESxLxLi_HdsQpKJMMxi0VMQ';// official Claim aka becbabbot
 let xtra2 = '542223581:AAGp2wSxpJLvA5I7sLFL4PGZILjsrLiA7NY'; //  Claim Token aka  cafbot5bot
-let xtra3 = '482126210:AAE4yJ-RMnaLGTVUEyETYRsE929MzyqFt5A'; //admin aka edbabbot
+let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
 let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbabbot
 
 
 let xtra1msg = 'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
-let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edu_babbot
+let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 /* 
 let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
@@ -415,7 +415,7 @@ x1.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
+        let msglog = await x1.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
 
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
@@ -502,7 +502,7 @@ x2.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
+        let msglog = await x2.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -581,7 +581,7 @@ x3.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
+        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -658,7 +658,7 @@ x4.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`, { replyToMessage: msg[0].message.message_id });
+        let msglog = await x4.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
