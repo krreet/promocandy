@@ -42,11 +42,11 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-let cafmsg1 = `CCRB AirDrop:boom::moneybag:
+let cafmsg1 = `CCRB AirDrop
 
 Free 500 CCRB==>>$1430
 
-Register here and get free 500 CCRB:point_down::point_down:
+Register here and get free 500 CCRB
 
 https://ccrb.io/affiliate/126690` ;//cafwelbot 
 
