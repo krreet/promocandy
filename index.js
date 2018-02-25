@@ -42,13 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-let cafmsg1 = `VBEE AirDrop:boom::moneybag:
+let cafmsg1 = `CCRB AirDrop:boom::moneybag:
 
-Free 500 VBEE==>>$1430
+Free 500 CCRB==>>$1430
 
-Register here and get free 500 VBEE:point_down::point_down:
+Register here and get free 500 CCRB:point_down::point_down:
 
-https://www.vuzzbee.com/z43523c59.html` ;//cafwelbot 
+https://ccrb.io/affiliate/126690` ;//cafwelbot 
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
@@ -1338,7 +1338,8 @@ cafbot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-        let msglog = await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+       let msglog = null;
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
