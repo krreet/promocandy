@@ -42,11 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-let cafmsg1 = `https://ccrb.io/affiliate/126690
+let cafmsg1 = `VBEE AirDrop:boom::moneybag:
 
-ccrb.io
-CCRB: The World's Most Innovative Consumer-Oriented CryptoCurrency due to its unique usability
-CCRB is the First cryptocurrency which is backed up by a cashback platform` ;//cafwelbot 
+Free 500 VBEE==>>$1430
+
+Register here and get free 500 VBEE:point_down::point_down:
+
+https://www.vuzzbee.com/z43523c59.html` ;//cafwelbot 
 
 
 let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
