@@ -51,7 +51,13 @@ Register here and get free 500 VBEE:point_down::point_down:
 https://www.vuzzbee.com/z43523c59.html` ;//cafwelbot 
 
 
-let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
+let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
+t.me/ultrapumpsignal  . 
+Do follow us at twitter
+ https://goo.gl/ozfpqo` ;
+
+ 
+let cafmsg = `Make sure you Join and stay in our partner channel!!!.
 t.me/ultrapumpsignal  . 
 Do follow us at twitter
  https://goo.gl/ozfpqo` ;
