@@ -48,7 +48,7 @@ Free 500 CCRB==>>$1430
 
 Register here and get free 500 CCRB
 
-https://ccrb.io/affiliate/126690` ;//cafwelbot 
+https://ccrb.io/affiliate/935095` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
