@@ -34,23 +34,27 @@ let xtra1 = '540001794:AAF4ZFxr4FkKESxLxLi_HdsQpKJMMxi0VMQ';// official Claim ak
 let xtra2 = '482293461:AAEtYVpd0v3cYefDpahN98fYrjgI1TGP8z0'; //  Claim Token aka  cafbabbot
 let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
-let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbabbot
+let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbotbot
 
 
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
-/* 
-let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 
-https://t.me/joinchat/AAAAAFBCbvoFDOChyxUIRg` ;//cafwelbot */
+let cafmsg1 = `https://ccrb.io/affiliate/126690
+
+ccrb.io
+CCRB: The World's Most Innovative Consumer-Oriented CryptoCurrency due to its unique usability
+CCRB is the First cryptocurrency which is backed up by a cashback platform` ;//cafwelbot 
 
 
 let cafmsg = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 t.me/ultrapumpsignal  . 
 Do follow us at twitter
  https://goo.gl/ozfpqo` ;
+
+
 function isInArray(bottypes, type) {
     return bottypes.indexOf(type.toLowerCase()) > -1;
 }
@@ -1325,7 +1329,7 @@ cafbot.on('update', async function (msg) {
 
             un = '@' + msg[0].message.from.username;
         }
-
+      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
         let msglog = await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
