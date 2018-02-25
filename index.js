@@ -42,13 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-let cafmsg1 = `CCRB AirDrop
+let cafmsg1 = `BTNG AirDrop
 
-Free 500 CCRB==>>$1430
+Free 100 BTNG==>>$1430
 
-Register here and get free 500 CCRB
+Register here and get free 100 BTNG
 
-https://ccrb.io/affiliate/126690` ;//cafwelbot 126690
+https://bitng.info/bounty/?ref=bCb325b25F` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
