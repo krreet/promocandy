@@ -42,7 +42,7 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-let cafmsg1 = `BTNG AirDrop
+var cafmsg1 = `BTNG AirDrop
 
 Free 100 BTNG==>>$1430
 
@@ -1406,6 +1406,14 @@ cafbot.on(/^\/say (.+)$/, async function (msg, props) {
     return cafbot.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
 });
 
+
+
+cafbot.on(/^\/msg (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    
+    cafmsg1 = text;
+    return cafbot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+});
 
 bot2.on('newChatMembers', (msg2) => {
 
