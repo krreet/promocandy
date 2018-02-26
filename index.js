@@ -42,13 +42,11 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-var cafmsg1 = `BTNG AirDrop
+var cafmsg1 = `BITSONG AirDrop. 
 
-Free 100 BTNG==>>$1430
+Free 200 BTSG==>>$1750. 
 
-Register here and get free 100 BTNG
-
-https://bitng.info/bounty/?ref=bCb325b25F` ;//cafwelbot 126690
+Register here and get free 200 BTSG https://bitsong.io/start/MULH4ZJB` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
