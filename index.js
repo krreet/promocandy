@@ -1338,7 +1338,7 @@ cafbot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+     // await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
