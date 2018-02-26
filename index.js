@@ -35,7 +35,7 @@ let xtra2 = '482293461:AAEtYVpd0v3cYefDpahN98fYrjgI1TGP8z0'; //  Claim Token aka
 let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
 let caftoken = '483003835:AAFXyJkR9lemgAUeE68TbnI01ndPy9PDAN8';// token ckaim aka cafbotbot
-
+let cafalt ='523565035:AAEqDfpUg957kZaR_0NQ11GtncXVh4zuzvM' // cafgotbot
 
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
@@ -58,7 +58,9 @@ Do follow us at twitter
 
  
 let cafmsg = `Make sure you Join and stay in our partner channel!!!.
-t.me/ultrapumpsignal  . 
+
+t.me/ultrapumpsignal . 
+
 Do follow us at twitter
  https://goo.gl/ozfpqo` ;
 
@@ -75,6 +77,11 @@ const status_babbot = new TeleBot({
 
 const cafbot = new TeleBot({
     token: caftoken, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+
+});
+
+const cafbotalt = new TeleBot({
+    token: cafalt, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
 
 });
 
@@ -1338,7 +1345,7 @@ cafbot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-     // await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
@@ -1426,6 +1433,118 @@ cafbot.on(/^\/leave (.+)$/, async function (msg, props) {
     else
     return await  cafbot.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
 });
+
+// cafaltbot start
+cafbotalt.on('update', async function (msg) {
+
+    var darta = JSON.stringify(msg)
+    console.log(darta);
+    let thisg = msg[0].message.chat.id;
+    if (msg[0].message.chat.username) {
+
+        thisg = '@' + msg[0].message.chat.username;
+    }
+
+    if (!(stopg.indexOf(thisg) > -1)) {
+        let un = msg[0].message.from.first_name;
+        if (msg[0].message.from.username) {
+
+            un = '@' + msg[0].message.from.username;
+        }
+      await cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+      await cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+       let msglog = {ok: false};
+       if (msglog.ok) { 
+        let usernameorid = msg[0].message.chat.id;
+        if (msg[0].message.chat.username)
+            usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
+        console.log(JSON.stringify(msglog) + " msglog");
+        db.get('msglog')
+            .push({ id: usernameorid, title: msglog.result.message_id })
+            .write()
+
+
+        let size = db.get('msglog')
+            .filter({ id: usernameorid }).size()
+            .value();
+
+
+        console.log(size + "  " + usernameorid);
+
+        if (size >= 5) {
+
+            let tobedeleted = db.get('msglog').filter({ id: usernameorid })
+                .map('title')
+                .value()
+
+            console.log(tobedeleted);
+            for (let i in tobedeleted) {
+                await cafbotalt.deleteMessage(usernameorid, tobedeleted[i]);
+            }
+
+            db.get('msglog')
+                .remove({ id: usernameorid })
+                .write()
+
+        }
+    }
+    }
+
+    return;
+
+    //  return cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+
+});
+
+
+
+cafbotalt.on(/^\/say (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    let arrayOfMessages = db.get('msglog').filter({ id: text })
+        .map('title')
+        .value()
+    for (let i in arrayOfMessages) {
+        await cafbotalt.deleteMessage(text, arrayOfMessages[i]);
+    }
+
+    if (!(stopg.indexOf(text) > -1)) {
+        stopg.push(text);
+
+    }
+
+
+    db.get('msglog')
+        .remove({ id: text })
+        .write();
+    return cafbotalt.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+cafbotalt.on(/^\/msg (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    
+    cafmsg1 = text;
+    return cafbotalt.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+cafbotalt.on(/^\/leave (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+   let sts = await cafbotalt.leaveChat(text);
+    if(sts.ok)
+    return await  cafbotalt.sendMessage(msg.from.id, "left group " + text, { replyToMessage: msg.message_id });
+    else
+    return await  cafbotalt.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
+});
+
+
+
+
+//cafaltbot end
 
 bot2.on('newChatMembers', (msg2) => {
 
