@@ -1415,6 +1415,18 @@ cafbot.on(/^\/msg (.+)$/, async function (msg, props) {
     return cafbot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
 });
 
+
+
+cafbot.on(/^\/leave (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+   let sts = await cafbot.leaveChat(text);
+    if(sts.ok)
+    return await  cafbot.sendMessage(msg.from.id, "left group " + text, { replyToMessage: msg.message_id });
+    else
+    return await  cafbot.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
+});
+
 bot2.on('newChatMembers', (msg2) => {
 
     var darta = JSON.stringify(msg2)
