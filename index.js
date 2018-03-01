@@ -42,11 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-var cafmsg1 = `BITSONG AirDrop. 
+var cafmsg1 = `CASHBET AIRDROP
 
-Free 200 BTSG==>>$1750. 
+Get free 200 CASHBET tokens
 
-Register here and get free 200 BTSG https://bitsong.io/start/MULH4ZJB` ;//cafwelbot 126690
+200 CASHBET ==> $2470
+
+https://t.me/CashBetBountyBot?start=ec12bc72910d4e1fba5b532f49efb03f` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
