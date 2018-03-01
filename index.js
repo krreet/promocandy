@@ -35,7 +35,7 @@ let xtra2 = '482293461:AAEtYVpd0v3cYefDpahN98fYrjgI1TGP8z0'; //  Claim Token aka
 let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
 let caftoken = '491012058:AAGxgIAvFIA5TpKaMUIN7fva28BOZnaA65g';// token ckaim aka cafbotbot
-let cafalt ='517413585:AAFSN8DcsGBCVsO4CQ3gwZ2yfQMsnljInwM' // cafgotbot
+let cafalt ='549387960:AAF1JRZlQ97ue6URxJuFZZGr8hNhVE6FbDo' // cafgotbot
 
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
@@ -1419,8 +1419,8 @@ cafbot.on(/^\/msg (.+)$/, async function (msg, props) {
     let text = props.match[1];
     
     cafmsg1 = text;
-    console.log(JSON.stringify(msg))
-    return cafbot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+    console.log("this is msg"+JSON.stringify(msg))
+    return await cafbot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
 });
 
 
