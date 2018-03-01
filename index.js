@@ -1419,6 +1419,7 @@ cafbot.on(/^\/msg (.+)$/, async function (msg, props) {
     let text = props.match[1];
     
     cafmsg1 = text;
+    console.log(JSON.stringify(msg))
     return cafbot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
 });
 
