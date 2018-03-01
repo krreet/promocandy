@@ -42,13 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-var cafmsg1 = `CASHBET AIRDROP
+var cafmsg1 = `TIMEBOX AIRDROP.  
 
-Get free 200 CASHBET tokens
+Get free 200 TIMEBOX  tokens.  
 
-200 CASHBET ==> $2470
+200 TIMEBOX  ==> $2470.  
 
-https://t.me/CashBetBountyBot?start=ec12bc72910d4e1fba5b532f49efb03f` ;//cafwelbot 126690
+https://t.me/TimeBoxBountyBot?start=1b85c415fac24565984f01ea71c1a54a` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
