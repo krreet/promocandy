@@ -34,7 +34,7 @@ let xtra1 = '540001794:AAF4ZFxr4FkKESxLxLi_HdsQpKJMMxi0VMQ';// official Claim ak
 let xtra2 = '482293461:AAEtYVpd0v3cYefDpahN98fYrjgI1TGP8z0'; //  Claim Token aka  cafbabbot
 let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
-let caftoken = '491012058:AAGxgIAvFIA5TpKaMUIN7fva28BOZnaA65g';// token ckaim aka cafbotbot
+let caftoken = '543676723:AAHyvzXZMmJ4W9qqTjhZvT4_fH36OJVQ6Wc';// token ckaim aka cafbotbot
 let cafalt ='549387960:AAF1JRZlQ97ue6URxJuFZZGr8hNhVE6FbDo' // cafgotbot
 
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
@@ -42,13 +42,13 @@ let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
 let xtra4msg = 'Join Here to claim your Coins @ultrapumpsignal';//karan_jaabot
 
-var cafmsg1 = `TIMEBOX AIRDROP.  
+var cafmsg1 = `BITSONG AirDrop. 
 
-Get free 200 TIMEBOX  tokens.  
+Free 200 BTSG==>>$3000
 
-200 TIMEBOX  ==> $2470.  
+Register and get free 200 BTSG
 
-https://t.me/TimeBoxBountyBot?start=1b85c415fac24565984f01ea71c1a54a` ;//cafwelbot 126690
+https://bitsong.io/start/MULH4ZJB` ;//cafwelbot 126690
 
 
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
