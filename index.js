@@ -35,7 +35,7 @@ let xtra2 = '482293461:AAEtYVpd0v3cYefDpahN98fYrjgI1TGP8z0'; //  Claim Token aka
 let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbot
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
 let caftoken = '568405250:AAGrLWZSr3MYrJIczuj6H3fPNcekbgWbGtc';// token ckaim aka cafbotbot
-let cafalt ='543957113:AAEwzXLg3j2JIJaR_DD63ahDbyJg6TRDkDs' // cafgotbot
+let cafalt ='549269112:AAEXTMgLKPGZ5ldb3-CV_BangJsFEE3WBWg' // cafgotbot
 
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
