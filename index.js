@@ -40,7 +40,7 @@ if(process.env.CAFB)
     caftoken = process.env.CAFB;
 
 
-let cafalt ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo' // cafgotbot
+let cafalt ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo'; // cafgotbot
 if(process.env.CAFG)
     cafalt = process.env.CAFG;
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
