@@ -600,7 +600,10 @@ x3.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
 
-        let msglog = await x3.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${xtra1msg}`);
+        await x3.sendMessage(msg[0].message.chat.id, `/welcome@jh0ker_welcomebot hi @$username join t.me/ultrapumpsignal to claim your tokens`);
+
+         let msglog = {ok: false};
+       if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
         if (msg[0].message.chat.username)
             usernameorid = '@' + msg[0].message.chat.username
@@ -636,6 +639,7 @@ x3.on('update', async function (msg) {
         }
 
     }
+}
     return;
 });
 
