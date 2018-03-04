@@ -36,12 +36,12 @@ let xtra3 = '527690509:AAFFvJh7PB22xAL16VFLHejPGnhdJCREc9Y'; //admin aka edbabbo
 let xtra4 = '532190109:AAHGlgspToPFAIKRuJg8LR2C_37rh559k28';//  karan Jaat aka karanbabbot
 
 let caftoken = '561672443:AAFod8FUAINjcy7KtDpbGQwVDD4a8_1YxkQ';// token ckaim aka cafbotbot
-if(process.env.CAFB){
+if(process.env.CAFB)
     caftoken = process.env.CAFB;
 
 
 let cafalt ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo' // cafgotbot
-if(process.env.CAFG){
+if(process.env.CAFG)
     cafalt = process.env.CAFG;
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
