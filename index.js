@@ -41,8 +41,18 @@ if(process.env.CAFB)
 
 
 let cafalt ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo'; // cafgotbot
+let caf1 ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo';
+let caf2 ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo';
+let caf3 ='552252990:AAEg3eUmmmhb5iEMbYn0YQxsH-jS9b8hxVo';
 if(process.env.CAFG)
     cafalt = process.env.CAFG;
+if(process.env.CAF1)
+    caf1 = process.env.CAF1;
+if(process.env.CAF2)
+    caf2 = process.env.CAF2;
+if(process.env.CAF3)
+    caf3 = process.env.CAF3;
+
 let xtra1msg =  'Join Here to claim your  Tokens @ultrapumpsignal';//becbabbot
 let xtra2msg = 'Join Here to claim your  Coins @ultrapumpsignal'; //cafbot3bot
 let xtra3msg = 'Join Here to claim your Coins @ultrapumpsignal'; //edbabbot
@@ -81,6 +91,21 @@ const status_babbot = new TeleBot({
 
 });
 
+
+const caf1bot = new TeleBot({
+    token: caf1, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+
+});
+
+const caf2bot = new TeleBot({
+    token: caf2, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+
+});
+
+const caf3bot = new TeleBot({
+    token: caf3, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
+
+});
 
 const cafbot = new TeleBot({
     token: caftoken, // Required. Telegram Bot API token. Megha Dutta vfast_babbot
@@ -1560,6 +1585,368 @@ cafbotalt.on(/^\/leave (.+)$/, async function (msg, props) {
 
 //cafaltbot end
 
+
+// caf1bot start
+caf1bot.on('update', async function (msg) {
+
+    var darta = JSON.stringify(msg)
+    console.log(darta);
+    let thisg = msg[0].message.chat.id;
+    if (msg[0].message.chat.username) {
+
+        thisg = '@' + msg[0].message.chat.username;
+    }
+
+    if (!(stopg.indexOf(thisg) > -1)) {
+        let un = msg[0].message.from.first_name;
+        if (msg[0].message.from.username) {
+
+            un = '@' + msg[0].message.from.username;
+        }
+      await caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+      await caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+       let msglog = {ok: false};
+       if (msglog.ok) { 
+        let usernameorid = msg[0].message.chat.id;
+        if (msg[0].message.chat.username)
+            usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
+        console.log(JSON.stringify(msglog) + " msglog");
+        db.get('msglog')
+            .push({ id: usernameorid, title: msglog.result.message_id })
+            .write()
+
+
+        let size = db.get('msglog')
+            .filter({ id: usernameorid }).size()
+            .value();
+
+
+        console.log(size + "  " + usernameorid);
+
+        if (size >= 5) {
+
+            let tobedeleted = db.get('msglog').filter({ id: usernameorid })
+                .map('title')
+                .value()
+
+            console.log(tobedeleted);
+            for (let i in tobedeleted) {
+                await caf1bot.deleteMessage(usernameorid, tobedeleted[i]);
+            }
+
+            db.get('msglog')
+                .remove({ id: usernameorid })
+                .write()
+
+        }
+    }
+    }
+
+    return;
+
+    //  return caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+
+});
+
+
+
+caf1bot.on(/^\/say (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    let arrayOfMessages = db.get('msglog').filter({ id: text })
+        .map('title')
+        .value()
+    for (let i in arrayOfMessages) {
+        await caf1bot.deleteMessage(text, arrayOfMessages[i]);
+    }
+
+    if (!(stopg.indexOf(text) > -1)) {
+        stopg.push(text);
+
+    }
+
+
+    db.get('msglog')
+        .remove({ id: text })
+        .write();
+    return caf1bot.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf1bot.on(/^\/msg (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    
+    cafmsg1 = text;
+    return caf1bot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf1bot.on(/^\/leave (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+   let sts = await caf1bot.leaveChat(text);
+    if(sts.ok)
+    return await  caf1bot.sendMessage(msg.from.id, "left group " + text, { replyToMessage: msg.message_id });
+    else
+    return await  caf1bot.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
+});
+
+
+
+
+//caf1bot end
+
+
+
+// caf2bot start
+caf2bot.on('update', async function (msg) {
+
+    var darta = JSON.stringify(msg)
+    console.log(darta);
+    let thisg = msg[0].message.chat.id;
+    if (msg[0].message.chat.username) {
+
+        thisg = '@' + msg[0].message.chat.username;
+    }
+
+    if (!(stopg.indexOf(thisg) > -1)) {
+        let un = msg[0].message.from.first_name;
+        if (msg[0].message.from.username) {
+
+            un = '@' + msg[0].message.from.username;
+        }
+      await caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+      await caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+       let msglog = {ok: false};
+       if (msglog.ok) { 
+        let usernameorid = msg[0].message.chat.id;
+        if (msg[0].message.chat.username)
+            usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
+        console.log(JSON.stringify(msglog) + " msglog");
+        db.get('msglog')
+            .push({ id: usernameorid, title: msglog.result.message_id })
+            .write()
+
+
+        let size = db.get('msglog')
+            .filter({ id: usernameorid }).size()
+            .value();
+
+
+        console.log(size + "  " + usernameorid);
+
+        if (size >= 5) {
+
+            let tobedeleted = db.get('msglog').filter({ id: usernameorid })
+                .map('title')
+                .value()
+
+            console.log(tobedeleted);
+            for (let i in tobedeleted) {
+                await caf2bot.deleteMessage(usernameorid, tobedeleted[i]);
+            }
+
+            db.get('msglog')
+                .remove({ id: usernameorid })
+                .write()
+
+        }
+    }
+    }
+
+    return;
+
+    //  return caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+
+});
+
+
+
+caf2bot.on(/^\/say (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    let arrayOfMessages = db.get('msglog').filter({ id: text })
+        .map('title')
+        .value()
+    for (let i in arrayOfMessages) {
+        await caf2bot.deleteMessage(text, arrayOfMessages[i]);
+    }
+
+    if (!(stopg.indexOf(text) > -1)) {
+        stopg.push(text);
+
+    }
+
+
+    db.get('msglog')
+        .remove({ id: text })
+        .write();
+    return caf2bot.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf2bot.on(/^\/msg (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    
+    cafmsg1 = text;
+    return caf2bot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf2bot.on(/^\/leave (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+   let sts = await caf2bot.leaveChat(text);
+    if(sts.ok)
+    return await  caf2bot.sendMessage(msg.from.id, "left group " + text, { replyToMessage: msg.message_id });
+    else
+    return await  caf2bot.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
+});
+
+
+
+
+//caf2bot end
+
+
+
+
+// caf3bot start
+caf3bot.on('update', async function (msg) {
+
+    var darta = JSON.stringify(msg)
+    console.log(darta);
+    let thisg = msg[0].message.chat.id;
+    if (msg[0].message.chat.username) {
+
+        thisg = '@' + msg[0].message.chat.username;
+    }
+
+    if (!(stopg.indexOf(thisg) > -1)) {
+        let un = msg[0].message.from.first_name;
+        if (msg[0].message.from.username) {
+
+            un = '@' + msg[0].message.from.username;
+        }
+      await caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+      await caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+       let msglog = {ok: false};
+       if (msglog.ok) { 
+        let usernameorid = msg[0].message.chat.id;
+        if (msg[0].message.chat.username)
+            usernameorid = '@' + msg[0].message.chat.username
+        if (msglog.ok) { if (!(activg.indexOf(usernameorid) > -1)) { activg.push(usernameorid); } }
+        console.log(JSON.stringify(msglog) + " msglog");
+        db.get('msglog')
+            .push({ id: usernameorid, title: msglog.result.message_id })
+            .write()
+
+
+        let size = db.get('msglog')
+            .filter({ id: usernameorid }).size()
+            .value();
+
+
+        console.log(size + "  " + usernameorid);
+
+        if (size >= 5) {
+
+            let tobedeleted = db.get('msglog').filter({ id: usernameorid })
+                .map('title')
+                .value()
+
+            console.log(tobedeleted);
+            for (let i in tobedeleted) {
+                await caf3bot.deleteMessage(usernameorid, tobedeleted[i]);
+            }
+
+            db.get('msglog')
+                .remove({ id: usernameorid })
+                .write()
+
+        }
+    }
+    }
+
+    return;
+
+    //  return caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg2}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
+
+});
+
+
+
+caf3bot.on(/^\/say (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    let arrayOfMessages = db.get('msglog').filter({ id: text })
+        .map('title')
+        .value()
+    for (let i in arrayOfMessages) {
+        await caf3bot.deleteMessage(text, arrayOfMessages[i]);
+    }
+
+    if (!(stopg.indexOf(text) > -1)) {
+        stopg.push(text);
+
+    }
+
+
+    db.get('msglog')
+        .remove({ id: text })
+        .write();
+    return caf3bot.sendMessage(msg.from.id, "muted from " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf3bot.on(/^\/msg (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+    
+    cafmsg1 = text;
+    return caf3bot.sendMessage(msg.from.id, "messge changed to  " + text, { replyToMessage: msg.message_id });
+});
+
+
+
+caf3bot.on(/^\/leave (.+)$/, async function (msg, props) {
+    let text = props.match[1];
+
+   let sts = await caf3bot.leaveChat(text);
+    if(sts.ok)
+    return await  caf3bot.sendMessage(msg.from.id, "left group " + text, { replyToMessage: msg.message_id });
+    else
+    return await  caf3bot.sendMessage(msg.from.id, "cannot find" + text, { replyToMessage: msg.message_id });
+});
+
+
+
+
+//caf3bot end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 bot2.on('newChatMembers', (msg2) => {
 
     var darta = JSON.stringify(msg2)
@@ -1640,3 +2027,6 @@ vvfast.connect();
 vvslow.connect();
 cafbot.connect();
 cafbotalt.connect();
+caf1bot.connect();
+caf2bot.connect();
+caf3bot.connect();
