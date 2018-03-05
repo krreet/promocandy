@@ -1383,7 +1383,7 @@ cafbot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true ,parse_mode: 'Markdown' });
-      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await cafbot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
@@ -1491,7 +1491,7 @@ cafbotalt.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-      await cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await cafbotalt.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
@@ -1604,7 +1604,7 @@ caf1bot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-      await caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await caf1bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
@@ -1718,7 +1718,7 @@ caf2bot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-      await caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await caf2bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
@@ -1833,7 +1833,7 @@ caf3bot.on('update', async function (msg) {
             un = '@' + msg[0].message.from.username;
         }
       await caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg1}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
-      await caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: false });
+      await caf3bot.sendMessage(msg[0].message.chat.id, `Hi , ${un} !!  ${cafmsg}`, { replyToMessage: msg[0].message.message_id, webPreview: true });
        let msglog = {ok: false};
        if (msglog.ok) { 
         let usernameorid = msg[0].message.chat.id;
