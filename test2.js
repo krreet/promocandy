@@ -29,14 +29,9 @@ server.listen(process.env.PORT, '0.0.0.0');
 
 
 let promo = "Please join our channel t.me/ultrapumpsignal and get FREE Airdrops!!. Do follow us at twitter https://goo.gl/ozfpqo";
-let bottypes = ["vvfast" ,"vfast", "fast", "med", "slow" , "vslow", "vvslow"];
-let vvfast_g  = ["officialios"];
-let vfast_g  = ["officialios"];
-let fast_g  = ["coindelta"];
-let med_g  = ["ALPHAPROTOCOL"];
-let slow_g  = ["sayofficial" , "AFFILiATECOINTALK","energitoken", "polymathnetwork" , "gonetwork_ch2"];
-let vslow_g  = ["hurifyico", "candygame"  , "AIFUNS_Z" ,"earairdrop"];
-let vvslow_g  = ["officialios"];
+let btoken = '508633256:AAH0rCkHJSkl5kLksastG0AwoyITwbyccR4';
+
+
 let vvftoken = '508633256:AAH0rCkHJSkl5kLksastG0AwoyITwbyccR4';//sania aka vvf_babbot
 let vftoken = '498032041:AAFTTeXTypck6bhCdfdj9OtOlOM3bJOifoo';// Required. Telegram Bot API token. Megha Dutta vfast_babbot
 let ftoken = '514572195:AAERzGh1fhXSoqEbrOC-3Cle6Kt9zoKGGsg';// Required. Telegram Bot API token. Maria Misty fast_babbot
