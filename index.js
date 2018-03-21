@@ -66,8 +66,10 @@ Register and get free 200 BTSG
 
 https://bitsong.io/start/MULH4ZJB` ;//cafwelbot 126690
 
-if(process.env.MSG)
+if(process.env.MSG){
 cafmsg1 = process.env.MSG;
+    cafmsg1 = cafmsg1.substring(0, 400);
+}
 let cafmsg2 = `Make sure you Join and stay in our partner channel else you won't receive tokens. Leaving this channel will disqualify you from the AirDrop campaign!!!.
 t.me/ultrapumpsignal  . 
 Do follow us at twitter
